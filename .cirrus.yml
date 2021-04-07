@@ -1,0 +1,9 @@
+container:
+  image: python:3.8
+  cpu: 2
+  memory: 4G
+
+
+version_task:
+  test_script: |
+    python -c "import platform; print(platform.release())"
